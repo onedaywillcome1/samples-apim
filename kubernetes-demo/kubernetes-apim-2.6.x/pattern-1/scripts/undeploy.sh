@@ -27,9 +27,9 @@ function echoBold () {
 }
 
 # persistent storage
-echoBold 'Deleting persistent volume and volume claim...'
-${KUBECTL} delete -f ../apim/wso2apim-volume-claim.yaml
-${KUBECTL} delete -f ../volumes/persistent-volumes.yaml
+#echoBold 'Deleting persistent volume and volume claim...'
+#${KUBECTL} delete -f ../apim/wso2apim-volume-claim.yaml
+#${KUBECTL} delete -f ../volumes/persistent-volumes.yaml
 
 # WSO2 Identity Server
 echoBold 'Deleting WSO2 API Manager with Analytics deployment...'

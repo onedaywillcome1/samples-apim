@@ -79,7 +79,8 @@
             <!-- Environments can be of different types. Allowed values are 'hybrid', 'production' and 'sandbox'.
                  An API deployed on a 'production' type gateway will only support production keys
                  An API deployed on a 'sandbox' type gateway will only support sandbox keys
-                 An API deployed on a 'hybrid' type gateway will support both production and sandbox keys. -->
+                 An API deployed on a 'hybrid' ./kubernetes-apim-2.6.x/pattern-1/confs/apim/api-manager.xml
+                 ./kubernetes-apim-2.6.x/pattern-1/confs/apim/api-manager.xmltype gateway will support both production and sandbox keys. -->
             <!-- api-console element specifies whether the environment should be listed in API Console or not -->
             <Environment type="hybrid" api-console="true">
                 <Name>Production and Sandbox</Name>
@@ -91,7 +92,7 @@
                 <!-- Admin password for the API gateway.-->
                 <Password>${admin.password}</Password>
                 <!-- Endpoint URLs for the APIs hosted in this API gateway.-->
-                <GatewayEndpoint>http://${carbon.local.ip}:${http.nio.port},https://${carbon.local.ip}:${https.nio.port}</GatewayEndpoint>
+                <GatewayEndpoint>http://wso2apim,https://wso2apim-gateway</GatewayEndpoint>
                 <!-- Endpoint of the Websocket APIs hosted in this API Gateway -->
                 <GatewayWSEndpoint>ws://${carbon.local.ip}:9099</GatewayWSEndpoint>
             </Environment>
